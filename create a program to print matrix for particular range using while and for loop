@@ -1,0 +1,14 @@
+create a program to print matrix for particular range using while and for loop
+# with for loop
+r=int(input("enter the rows:"))
+c=int(input("enter the col:"))
+i=1
+j=i
+m=[]
+for i in range(r):
+    g=[]
+    for j in range(c):
+        a=input()
+        g.append(a)
+    m.append(g)
+print(m)
