@@ -1,0 +1,32 @@
+def ChangeList(number):
+    n=0
+    p=0
+    str1=""
+    for i in number:
+        for j in number[n+1:]:
+            if int(j)>=int(i):
+                b=int(j)-int(i)
+                str1+=str(b)
+                n+=1
+                break
+            else:
+                a="1"+j
+                b=int(a)-int(i)
+                str1+=str(b)
+                n+=1
+                break
+    return str1
+
+
+
+num ='15789945'
+
+q=ChangeList(num)
+numb=q
+
+print(q)
+
+for i in range(len(num)):
+    n=ChangeList(numb)
+    print(n)
+    numb=n
